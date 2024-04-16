@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Forms</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
+            <h3>Enter your email here. </h3>
+            <label for="email">Email: </label>
+            <input type="email" name="email" autocomplete="on" placeholder="exmaple@exmaple.com" required>
+
+            <h3>Enter your age here. </h3>
+            <label for="quantity">Age:</label>
+            <input type="number" name='quantity' min="10" max="100" step="1" autocomplete="on">
+
+            <h3>Enter employing date here. </h3>
+            <label for="date">Employing Date:</label>
+            <input type="date" name="date" required>
+
+            <h3>Pick your language of choice. </h3>
+            <label for="language">Language:</label>
+            <input type="radio" name="language" value="Python">
+            <label for="language">Python</label>
+            <input type="radio" name="language" value="SQL">
+            <label for="language">SQL</label>
+            <input type="radio" name="language" value="HTML">
+            <label for="language">HTML</label>
+            <input type="radio" name="language" value="CSS">
+            <label for="language">CSS</label>
+            <div role="alert" aria-live="assertive"></div>
+
+            <h3>Select your salary range. </h3>
+            <label for="salary">Salary:</label>
+            <select name="salary">
+                <option value="10000">10000</option>
+                <option value="20000">20000</option>
+                <option value="30000">30000</option>
+                <option value="40000">40000</option>
+                <option value="50000">50000</option>
+            </select>
+
+            <h3>Pick your color. </h3>
+            <label for="color">Color:</label>
+            <input type="color" name="color" value="#fffff">
+
+            <h3>Want to subscribe to news letter. </h3>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" name="subscribe" value="Yes">
+
+            <br>
+            <br>
+            <label for="button">Submit your form </label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+</body>
+</html>
